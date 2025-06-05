@@ -1,5 +1,5 @@
 <template>
-  <section class="currency-converter-section">
+  <section class="currency-converter-section" id="exchange">
     <div class="converter-header">
       <h2 class="title">محول العملات في عملة</h2>
       <p class="subtitle">تحقق من أسعار صرف العملات الأجنبية المباشرة</p>

@@ -1,5 +1,5 @@
 <template>
-      <section class="download-app-section">
+      <section class="download-app-section" id="phoneAPP">
             <div class="section-container">
                   <h2 class="section-title">قم بتنزيل تطبيق عملة</h2>
 
