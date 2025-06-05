@@ -1,23 +1,26 @@
 {
-  "name": "omla-client",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.6",
-    "bootstrap-icons": "^1.13.1",
-    "chart.js": "^4.4.9",
-    "vue": "^3.5.13",
-    "vue-chartjs": "^5.3.2"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.3",
-    "vite": "^6.2.4",
-    "vite-plugin-vue-devtools": "^7.7.2"
-  }
+      "name": "omla-client",
+      "version": "0.0.0",
+      "private": true,
+      "type": "module",
+      "scripts": {
+            "dev": "vite",
+            "build": "vite build",
+            "preview": "vite preview",
+            "deploy": "gh-pages -d dist"
+      },
+      "dependencies": {
+            "bootstrap": "^5.3.6",
+            "bootstrap-icons": "^1.13.1",
+            "chart.js": "^4.4.9",
+            "vue": "^3.5.13",
+            "vue-chartjs": "^5.3.2"
+      },
+      "devDependencies": {
+            "@vitejs/plugin-vue": "^5.2.3",
+            "gh-pages": "^6.3.0",
+            "vite": "^6.2.4",
+            "vite-plugin-pages": "^0.33.0",
+            "vite-plugin-vue-devtools": "^7.7.2"
+      }
 }
