@@ -54,7 +54,7 @@
               @input="convertCurrency('from')"
               placeholder="0"
               min="0"
-              class="currency-input"
+              class="currency-input" style="width: .5rem;"
             />
             <div class="currency-selector-display">
               <img
@@ -109,7 +109,7 @@
               @input="convertCurrency('to')"
               placeholder="0"
               min="0"
-              class="currency-input"
+              class="currency-input" style="width: .5rem;"
             />
             <div class="currency-selector-display">
               <img
@@ -174,19 +174,19 @@ export default {
   name: "CurrencyConverterSection",
   data() {
     return {
-      fromAmount: 100, // قيمة ابتدائية لتظهر في الكارد
+      fromAmount: 100, 
       toAmount: 0,
       fromCurrency: "SAR",
       toCurrency: "USD",
       exchangeRate: 0,
-      feePercentage: 0.01, // 1% fee
-      taxPercentage: 0.005, // 0.5% tax
+      feePercentage: 0.01, 
+      taxPercentage: 0.005, 
       currencies: [
         {
           code: "SAR",
           name: "ريال سعودي",
           flag: "🇸🇦",
-          imageUrl: "https://flagcdn.com/24x18/sa.png", // استخدام flags.fmcdn.com
+          imageUrl: "https://flagcdn.com/24x18/sa.png", 
         },
         {
           code: "USD",
@@ -249,10 +249,10 @@ export default {
           imageUrl: "https://flagcdn.com/24x18/jp.png",
         },
       ],
-      // Dummy exchange rates (SAR based)
+   
       dummyExchangeRates: {
-        SAR_USD: 0.2667, // 1 SAR = 0.2667 USD
-        USD_SAR: 3.75, // 1 USD = 3.75 SAR
+        SAR_USD: 0.2667,
+        USD_SAR: 3.75, 
         SAR_EUR: 0.245,
         EUR_SAR: 4.08,
         SAR_GBP: 0.21,
