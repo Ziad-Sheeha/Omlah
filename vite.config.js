@@ -6,7 +6,7 @@ import vueDevTools from "vite-plugin-vue-devtools";
 
 // https://vite.dev/config/
 export default defineConfig({
-      base: "/omlah/", // 👈 your repo name
+      base: "", // 👈 your repo name
       plugins: [vue(), vueDevTools()],
       resolve: {
             alias: {
