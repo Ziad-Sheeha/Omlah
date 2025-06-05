@@ -3,7 +3,6 @@
     <div class="footer-content-wrapper">
       <div class="footer-brand">
         <img src="../../assets/Images/logofooter.svg" alt="Omlah Exchange Co. Logo" class="company-logo" />
-        <button class="cta-button">ابدأ الآن -</button>
       </div>
 
       <div class="footer-column">
@@ -22,21 +21,20 @@
       <div class="footer-column">
         <h3>روابط سريعة</h3>
         <ul>
-          <li><a href="#">الرئيسية</a></li>
-          <li><a href="#">خدماتنا</a></li>
-          <li><a href="#">من نحن</a></li>
+          <li><a href="#main">الرئيسية</a></li>
+          <li><a href="#servie">خدماتنا</a></li>
+          <li><a href="#howAreWe">من نحن</a></li>
           <li><a href="#">العمولات</a></li>
           <li><a href="#">تطبيق الجوال</a></li>
-          <li><a href="#">الأسئلة الشائعة</a></li>
-          <li><a href="#">تواصل معنا</a></li>
+          <li><a href="#FAQ">الأسئلة الشائعة</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
         </ul>
       </div>
 
       <div class="footer-column">
         <h3>المساعدة والدعم</h3>
         <ul>
-          <li><a href="#">تسجيل حساب جديد للعملاء</a></li>
-          <li><a href="#">تسجيل حساب جديد للأعمال</a></li>
+    
           <li><a href="#">الشروط و الأحكام</a></li>
           <li><a href="#">سياسة الخصوصية</a></li>
         </ul>
@@ -95,21 +93,7 @@ width: 45%;
   margin-bottom: 20px;
 }
 
-.cta-button {
-  background-color: #ffff; 
-  color: black;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 25px;
-  font-size: 16px;
-  font-weight: 900;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
 
-.cta-button:hover {
-  background-color: #089fd3;
-}
 
 .footer-column {
   flex: 1 1 180px;
@@ -262,10 +246,7 @@ width: 45%;
     font-size: 16px;
   }
 
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
+  
 
   .footer-column h3 {
     font-size: 18px;

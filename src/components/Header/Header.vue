@@ -1,20 +1,20 @@
 <template>
   <header class="navbar navbar-expand-lg">
-    <div class="header-content">
+  <div class="container">
+        <div class="header-content">
       <div class="logo">
         <img src="../../assets/Images/logo.svg" alt="Omlah." class="logo-image" loading="lazy"/>
       </div>
 
-      <!-- nav-wrapper: يحتوي الآن على جميع عناصر التنقل، محدد اللغة، وأزرار المصادقة (للدسكتوب والموبايل) -->
+      
       <div :class="['nav-wrapper', { 'open': isMenuOpen }]">
         <nav class="main-nav">
           <ul>
-            <!-- إضافة @click="isMenuOpen = false" لإغلاق القائمة عند النقر على رابط -->
             <li><a href="#main" @click="isMenuOpen = false">الرئيسية</a></li>
             <li><a href="#servie" @click="isMenuOpen = false">خدماتنا</a></li>
             <li><a href="#exchange" @click="isMenuOpen = false">العملات</a></li>
             <li><a href="#" @click="isMenuOpen = false">الفروع</a></li>
-            <li><a href="#phoneAPP" @click="isMenuOpen = false">تطبيق الجوال</a></li>
+            <li><a href="#howAreWe" @click="isMenuOpen = false">من نحن </a></li>
             <li><a href="#FAQ" @click="isMenuOpen = false">الأسئلة الشائعة</a></li>
           </ul>
         </nav>
@@ -42,6 +42,8 @@
       </button>
 
     </div>
+  </div>
+
   </header>
 </template>
 
@@ -50,13 +52,12 @@ export default {
   name: 'AppHeader',
   data() {
     return {
-      isMenuOpen: false // حالة لفتح وإغلاق قائمة الهامبرغر
+      isMenuOpen: false 
     };
   },
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
-      // إضافة/إزالة كلاس 'no-scroll' من الـ body لمنع التمرير في الخلفية عند فتح القائمة
       document.body.classList.toggle('no-scroll', this.isMenuOpen);
     }
   }
@@ -70,13 +71,12 @@ body.no-scroll {
 }
 
 .navbar {
-  background-color: #ffffff;
+  background-color: #ffff;
   padding: 10px var(--app-padding-x); 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
   box-sizing: border-box;
   z-index: 9999; 
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   direction: rtl; 
@@ -87,8 +87,9 @@ body.no-scroll {
   justify-content: space-between; 
   align-items: center;
   width: 100%;
-  max-width: var(--app-max-width);
+  max-width:auto; 
   margin: 0 auto; 
+  margin-left: 0;
 }
 
 .logo .logo-image {
@@ -146,7 +147,7 @@ body.no-scroll {
 
 .auth-buttons.desktop-auth-buttons {
   display: flex; 
-  gap: 10px;
+  gap: 10px; 
 }
 .auth-buttons.mobile-auth-buttons {
     display: none; 
@@ -188,7 +189,7 @@ body.no-scroll {
 }
 
 .menu-toggle {
-  display: none;
+  display: none; 
   background: none;
   border: none;
   font-size: 30px; 
@@ -198,8 +199,7 @@ body.no-scroll {
   z-index: 10000; 
 }
 
-
-@media (max-width: 991px) {
+@media (max-width: 991px) { 
   .header-content {
     padding: 0; 
   }
@@ -210,18 +210,18 @@ body.no-scroll {
     position: fixed; 
     top: 68px; 
     width: 100%;
-    height: calc(100vh - 68px); 
+    height: calc(100vh - 68px);
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px var(--app-padding-x); 
     overflow-y: auto; 
     transition: right 0.3s ease-in-out; 
-    z-index: 9998; 
+    z-index: 9998;
     
     right: -100%;
     align-items: flex-end; 
     justify-content: flex-start; 
-    gap: 20px;
+    gap: 20px; 
   }
 
   .nav-wrapper.open {
@@ -231,7 +231,7 @@ body.no-scroll {
 
   .main-nav ul {
     flex-direction: column; 
-    text-align: right; 
+    text-align: right;
     width: 100%;
     gap: 10px;
   }
@@ -241,7 +241,7 @@ body.no-scroll {
   }
 
   .main-nav li a {
-    padding: 12px 0; 
+    padding: 12px 0;
     display: block; 
     font-size: 17px;
   }
@@ -254,12 +254,12 @@ body.no-scroll {
   }
 
   .desktop-auth-buttons {
-    display: none; 
+    display: none;
   }
 
   .mobile-auth-buttons {
     display: flex; 
-    flex-direction: column;
+    flex-direction: column; 
     gap: 10px;
     width: 100%;
     padding: 20px 0; 
@@ -309,7 +309,7 @@ body.no-scroll {
 
 
 html[dir="ltr"] .navbar {
-  direction: ltr;
+  direction: ltr; 
 }
 html[dir="ltr"] .header-content {
   direction: ltr; 
@@ -340,7 +340,7 @@ html[dir="ltr"] .language-selector {
     transition: left 0.3s ease-in-out; 
   }
   html[dir="ltr"] .nav-wrapper.open {
-    left: 0; 
+    left: 0;
   }
   html[dir="ltr"] .mobile-auth-buttons .btn {
     margin-inline-start: auto; 

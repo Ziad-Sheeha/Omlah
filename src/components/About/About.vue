@@ -22,7 +22,7 @@
             <div class="step-icon">
               <img src="../../assets/Images/deliver.png" alt="استلام التسميرة" />
             </div>
-            <h5 class="step-title">استلام التسميرة</h5>
+            <h5 class="step-title">استلام التسعيرة</h5>
           </div>
         </div>
 

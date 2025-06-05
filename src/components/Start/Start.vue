@@ -1,5 +1,5 @@
 <template>
-  <section class="about-us-section py-5 text-white">
+  <section class="about-us-section py-5 text-white" id="howAreWe">
     <div class="container">
       <div class="row align-items-center">
 
